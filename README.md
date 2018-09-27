@@ -1,12 +1,11 @@
 # glw_weather
 ## Python 3: Scrape Weather Data from HTML: urllib3, BeautifulSoup, terminaltables
 
-Two versions of a scraping script for tabulated weather data from a Davis® Weatherlink Web page. So, if that Web page HTML changes, the script can easily break. The scripts have been created for testing and personal use. The following modules have been imported into one or both scripts:
+Two versions of a scraping script for tabulated weather data from a Davis® Weatherlink Web page. So, if that Web page HTML changes, the scripts can easily break. The scripts have been created for testing and personal use. The following modules have been imported into one or both scripts:
 
-- `urllib3` module for server requests, including `PoolManager`
-- `BeautifulSoup` class from `bs4` module
-- `AsciiTable` class from `terminaltables` module
-
+- [urllib3](https://urllib3.readthedocs.io/en/latest/) is the HTTP client, including [PoolManager](https://urllib3.readthedocs.io/en/1.2.1/managers.html) which can pool multiple servers.
+- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/) functions as a Python wrapper for an HTML parser for traversing, searching and changing the parsed tree.
+- [AsciiTable](https://pypi.org/project/terminaltables/) uses `-` for horizontal lines, `|` for vertical lines and `+` for intersections to construct tabular data grids.
 ### Variables
 
 - `http = urllib3.PoolManager()`: `urllib3`'s `PoolManager()` handles arbitrary server requests.
