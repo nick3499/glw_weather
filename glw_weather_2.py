@@ -93,4 +93,7 @@ s_table = AsciiTable(soil)
 
 print(table.table)
 print(r_table.table)
-print(s_table.table)
+try:
+    print(s_table.table)
+except IndexError:
+    print("Soil temperature data is unavailable.")
