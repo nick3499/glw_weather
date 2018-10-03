@@ -76,8 +76,12 @@ print("\033[36m Rain rates:\033[0m",
 "\033[36mstorm:\033[0m", soup.select("td:nth-of-type(132)")[0].string, "\033[31m|\033[0m",
 "\033[36mmonth:\033[0m", soup.select("td:nth-of-type(133)")[0].string, "\033[31m|\033[0m",
 "\033[36myear:\033[0m", soup.select("td:nth-of-type(134)")[0].string)
-print("\033[36mSoil Temperature:\033[0m",
-"\n\033[32m     Temp 1:\033[0m", soup.select("td:nth-of-type(155)")[0].string, "\033[31m|\033[0m",
-"\033[32mTemp 2:\033[0m", soup.select("td:nth-of-type(161)")[0].string, "\033[31m|\033[0m",
-"\033[32mTemp 3:\033[0m", soup.select("td:nth-of-type(167)")[0].string, "\033[31m|\033[0m",
-"\033[32mTemp 4:\033[0m", soup.select("td:nth-of-type(173)")[0].string)
+# Soil Temperature
+try:
+    print("\033[36mSoil Temperature:\033[0m",
+    "\n\033[32m     Temp 1:\033[0m", soup.select("td:nth-of-type(155)")[0].string, "\033[31m|\033[0m",
+    "\033[32mTemp 2:\033[0m", soup.select("td:nth-of-type(161)")[0].string, "\033[31m|\033[0m",
+    "\033[32mTemp 3:\033[0m", soup.select("td:nth-of-type(167)")[0].string, "\033[31m|\033[0m",
+    "\033[32mTemp 4:\033[0m", soup.select("td:nth-of-type(173)")[0].string)
+except IndexError:
+    print("Soil temperature data is unavailable.")
