@@ -37,3 +37,5 @@ in the variables defined above, `AsciiTable()` class gets the data arrays and fo
 ![glw2]
 
 [glw2]: https://github.com/nick3499/glw_weather/blob/master/glw_weather_2.png "Scraping Script v.2"
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R72LISM)
